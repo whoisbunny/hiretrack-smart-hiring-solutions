@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const HeroSection = () => {
   const highlights = [
@@ -50,12 +50,6 @@ const HeroSection = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" asChild>
-              <a href="https://hire.upforce.tech/auth/login" target="_blank" rel="noopener noreferrer">
-                Access Platform
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#downloads">
                 View Documentation

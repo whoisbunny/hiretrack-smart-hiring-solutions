@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -39,18 +37,6 @@ const Header = () => {
             </a>
           </nav>
 
-          <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" asChild>
-              <a href="https://hire.upforce.tech/auth/login" target="_blank" rel="noopener noreferrer">
-                Sign In
-              </a>
-            </Button>
-            <Button variant="hero" size="sm" asChild>
-              <a href="https://hire.upforce.tech/auth/login" target="_blank" rel="noopener noreferrer">
-                Get Started
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     </header>

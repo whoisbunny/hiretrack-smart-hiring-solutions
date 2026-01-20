@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -15,16 +14,6 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button 
-              variant="hero" 
-              size="xl" 
-              asChild
-            >
-              <a href="https://hire.upforce.tech/auth/login" target="_blank" rel="noopener noreferrer">
-                Access HireTrack
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </Button>
             <Button 
               size="xl" 
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"

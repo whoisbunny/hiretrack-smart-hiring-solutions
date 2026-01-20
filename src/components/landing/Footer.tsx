@@ -34,14 +34,6 @@ const Footer = () => {
             <a href="#downloads" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Downloads
             </a>
-            <a 
-              href="https://hire.upforce.tech/auth/login" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Sign In
-            </a>
           </nav>
 
           {/* Copyright */}
