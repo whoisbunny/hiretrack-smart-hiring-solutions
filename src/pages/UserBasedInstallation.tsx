@@ -169,11 +169,10 @@ const UserBasedInstallation = () => {
 sudo chmod 700 /home/hiretrack/.ssh
 sudo chown hiretrack:hiretrack /home/hiretrack/.ssh`} />
             <p className="text-sm text-muted-foreground mt-2">Create the authorized_keys file:</p>
-            <CopyableCode code="sudo nano /home/hiretrack/.ssh/authorized_keys" />
+            <CopyableCode code="sudo nano ~/.ssh/authorized_keys" />
             <p className="text-sm text-muted-foreground mt-2">Paste the public key you copied from your local machine, then save and exit (Ctrl+X, Y, Enter).</p>
             <p className="text-sm text-muted-foreground mt-2">Set correct permissions:</p>
-            <CopyableCode code={`sudo chmod 600 /home/hiretrack/.ssh/authorized_keys
-sudo chown hiretrack:hiretrack /home/hiretrack/.ssh/authorized_keys`} />
+            <CopyableCode code="sudo chmod 600 ~/.ssh/authorized_keys" />
 
             <h4 className="text-lg font-medium text-foreground mt-4">Step 2.3: Harden SSH Configuration (Recommended)</h4>
             <p className="text-sm text-muted-foreground">Edit SSH configuration:</p>
@@ -237,7 +236,12 @@ hiretrack ALL=(root) NOPASSWD: \\
   /usr/bin/certbot *, \\
   /usr/bin/crontab *, \\
   /usr/bin/fail2ban-client *`} />
-            <p className="text-sm text-muted-foreground mt-2">Save and exit. Verify the sudoers file syntax:</p>
+            <p className="text-sm text-muted-foreground mt-2">Save and exit. Set the correct permissions on the sudoers file (required for security):</p>
+            <CopyableCode code="sudo chmod 0440 /etc/sudoers.d/hiretrack" />
+            <p className="text-sm text-muted-foreground mt-2">Verify the file permissions:</p>
+            <CopyableCode code="ls -l /etc/sudoers.d/hiretrack" />
+            <p className="text-sm text-muted-foreground mt-2">Expected output should show <code className="bg-muted px-2 py-0.5 rounded">-r--r-----</code> (0440 permissions).</p>
+            <p className="text-sm text-muted-foreground mt-2">Verify the sudoers file syntax:</p>
             <CopyableCode code="sudo visudo -c" />
             <p className="text-sm text-muted-foreground mt-2">Expected output: <code className="bg-muted px-2 py-0.5 rounded">/etc/sudoers.d/hiretrack: parsed OK</code></p>
 
