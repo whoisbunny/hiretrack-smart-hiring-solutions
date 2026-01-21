@@ -19,7 +19,7 @@ const CTASection = () => {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
               asChild
             >
-              <a href="#downloads">
+              <a href="/#downloads">
                 View Documentation
               </a>
             </Button>

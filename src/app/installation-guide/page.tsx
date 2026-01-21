@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { ArrowLeft, Shield, Terminal, CheckCircle2, AlertTriangle, Server } from 'lucide-react';
+import { Shield, Terminal, CheckCircle2, AlertTriangle, Server } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Header from '@/components/landing/Header';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,21 +17,10 @@ export const metadata: Metadata = {
 export default function InstallationGuide() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Back to Home</span>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-12 pt-24">
         <div className="prose prose-slate dark:prose-invert max-w-none">
           {/* Title */}
           <div className="text-center mb-12">

@@ -35,11 +35,11 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="how-it-works" className="section-padding">
+    <section id="how-it-works" className="section-padding scroll-mt-24">
       <div className="section-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How HireTrack Works
+            How Candidate Apply Works
           </h2>
           <p className="text-lg text-muted-foreground">
             A streamlined workflow from job posting to final offer. 

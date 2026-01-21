@@ -44,7 +44,7 @@ const roles = [
 
 const RolesSection = () => {
   return (
-    <section id="roles" className="section-padding bg-muted/30">
+    <section id="roles" className="section-padding bg-muted/30 scroll-mt-24">
       <div className="section-container">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

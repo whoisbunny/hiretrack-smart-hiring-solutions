@@ -56,7 +56,7 @@ const HeroSection = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#downloads">
+              <a href="/#downloads">
                 View Documentation
               </a>
             </Button>
